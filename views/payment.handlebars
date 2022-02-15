@@ -1,0 +1,12 @@
+{{!-- Hidden divs with data passed from the Express server --}}
+<div id="paymentMethodsResponse" class="hidden">{{{ response }}}</div>
+ <div id="clientKey" class="hidden">{{ clientKey }}</div>
+
+    <h1>Drop-in</h1>
+        <div class="payment-page">
+            <div class="container">
+             <div id="dropin"></div>
+            </div>
+        </div>
+{{!-- Adyen dropin client code --}}
+<script type="text/javascript" src="../adyenImplementation.js"></script>
